@@ -1,0 +1,56 @@
+--Lesson One:       Introduction to SQL
+   SELECT * FROM celebs;
+   --expected result: returns the full table labelled celebs
+
+--Lesson Two:       Relational Databases
+   --Definition: A relational database is a database that organizes information into one or more tables.
+   --Here, the relational database contains one table.
+
+--Lesson Three:     Statements
+   -- analyze the following: SELECT * FROM celebs;
+   --Which parts of the statement are the clauses?
+   --  ANSWER: The Clauses consists of SELECT and FROM as they are the two commands used.
+   --What table are we applying the command to?
+   --  ANSWER: We are applying the comand to the celebs table.
+
+--Lesson Four:      Create
+   -- CREATE TABLE is a clause that tells SQL you want to create a new table.
+   --Instructions
+   -- First ensure the table is not there by using the select function
+   SELECT * FROM celebs;
+   -- Once confirmed create the celebs table
+   CREATE TABLE celebs (
+      id INTEGER, 
+      name TEXT, 
+      age INTEGER
+   ); 
+   --expect result, we expect a table labelled celebs to be created. The columns
+   -- consists of an id field (an integer -2,147,483,647 to 2,147,483,647), name text (any string of text),
+   -- and an age (again an integer)
+
+--Lesson Five:      Insert
+   -- The INSERT statement inserts a new row into a table.
+   -- INSERT INTO is a clause that adds the specified row or rows.
+   -- VALUES is a clause that indicates the data being inserted.
+   --Instructions
+   --First add a row into the table using the following, notice each column has a correlating value.
+   INSERT INTO celebs (id, name, age) 
+   VALUES (1, 'Justin Bieber', 29);
+   --Look at the Database Schema. How many rows are in the celebs table? ANSWER: 1 row.
+   --Insert 3 more celebrities beneath the previous statement
+   INSERT INTO celebs (id, name, age) 
+   VALUES (2, 'Beyonce Knowles', 42); 
+
+   INSERT INTO celebs (id, name, age) 
+   VALUES (3, 'Jeremy Lin', 35); 
+
+   INSERT INTO celebs (id, name, age) 
+   VALUES (4, 'Taylor Swift', 33); 
+   --Look at the Database Schema. How many rows are in the celebs table now? 4 rows.
+   
+--Lesson Six:       Select
+--Lesson Seven:     Alter
+--Lesson Eight:     Update
+--Lesson Nine:      Delete
+--Lesson Ten:       Constraints
+--Lesson Eleven:    Review
