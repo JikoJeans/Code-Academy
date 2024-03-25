@@ -1,0 +1,46 @@
+SQL Manipulation Project
+
+Objective: The objective of this assignment is to assess your understanding of basic SQL commands
+covered in this lesson including CREATE TABLE, INSERT INTO, SELECT, ALTER TABLE, UPDATE, and DELETE.
+
+Instructions:
+
+1) Create a new database called 'RevenueDB'
+
+2) Create the following tables with appropriate columns and constraints:
+    2a) 'Deposits' table with the columns: 'DepositID', 'Player', 'Deposit_Amount', 'Date' and the following constraints:
+        DepositID:      An integer that must use the primary constraint.
+        Player:         A text value that can not be null.
+        Deposit_Amount: An integer value that can not be null.
+        Date:           A text value that can be null.
+
+3) Insert the following sample data into both tables.
+DepositID,  Player,            Deposit_Amount, Date
+0,         'Bowen Higgins',    500,            3/23/24
+1,         'Franklin Sierra',  750,            3/24/24
+2,         'Marceline Avila',  100,            3/24/24
+3,         'Olivia Palmer',    2000,           3/24/24
+4,         'Liam Nisan',       3000,           3/25/24
+5,         'Marceline Avila',  500,            3/25/24
+6,         'Kaleb Gentry',     300,            3/25/24
+
+4) Perform the following tasks:
+    4a) Retrieve all entries in the deposit table.
+    4b) Retrieve the names of players who made a deposit on 03/24/24.
+    4c) Retrieve the deposit amounts of players who made a deposit on 03/24/24.
+
+    4d) Update the deposit amount of the player with the DepositID 3 to 1000.
+    4e) Update the deposit date of the player with the DepositID 1 to 3/24/24.
+    
+    4f) Insert a new record into the deposits table with the player name set to 'Robert Pat', deposit amount '500', and deposit date 3/25/24.
+    4g) Add a new column called 'Deposit_Time' and autofill each entry with the time '12:00AM'.
+
+    4h) Delete the deposit with DepositID 2 from the Deposits table;
+    4i) Delete the column called 'Deposit_Time'.
+    
+    4j) Retrieve the details of the remaining deposits.
+
+Submission:
+    Submit a text file containing:
+    1) SQL script for creating the database, table, and inserting sample data.
+    2) SQL queries for performing the tasks mentioned above.
