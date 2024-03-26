@@ -17,7 +17,7 @@ Instructions:
 3) Insert the following sample data into both tables.
 DepositID,  Player,            Deposit_Amount, Date
 0,         'Bowen Higgins',    500,            3/23/24
-1,         'Franklin Sierra',  750,            3/24/24
+1,         'Franklin Sierra',  750,            3/25/24
 2,         'Marceline Avila',  100,            3/24/24
 3,         'Olivia Palmer',    2000,           3/24/24
 4,         'Liam Nisan',       3000,           3/25/24
