@@ -6,16 +6,16 @@ This section contains a collection of SQL problems and solutions that I've worke
 Each folder contains 1 section that holds a file for the code and notes from each lesson called lessons.db and any other correlating content.
 
 ### Section 1: Manipulation
-Use SQL to access, create, and update data stored in a database. Contains 1 lesson, quiz, project, and article.
+Use SQL to access, create, and update data stored in a database. Contains 1 lesson, project, and article.
 
 ### Section 2: Queries
-Perform more complex queries by using essential query keywords and functionality. Contains 1 lesson, quiz,and project.
+Perform more complex queries by using essential query keywords and functionality. Contains 1 lesson,and project.
 
 ### Section 3: Aggregate Functions
-Learn powerful functions for performing complex database operations with ease. Contains 1 lesson, quiz,and 2 projects.
+Learn powerful functions for performing complex database operations with ease. Contains 1 lesson,and 2 projects.
 
 ### Section 4: Multiple Tables
-Expand SQL skills by creating and manipulating databases with multiple related tables. Contains 1 lesson, quiz,and project.
+Expand SQL skills by creating and manipulating databases with multiple related tables. Contains 1 lesson,and project.
 
 ## Contributions
 Feel free to review to this repository for help or fork this repository and add your own solutions to it. I'd love to see how others approach these and other problems!

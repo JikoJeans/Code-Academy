@@ -1,0 +1,19 @@
+Link to article: https://www.codecademy.com/courses/learn-sql/articles/what-is-sqlite
+
+What is SQLite?
+    SQLite is a database engine that allows users to interact with a relational database. SQLite stores
+    the database in a single file which allows for a great deal of portability as databases can be copied
+    and used locally.
+
+Drawbacks to SQLite
+    The use of a single file is also a limiting factor when using SQLite as only 1 user can modify the file
+    at a time to maintain the integrety of the data. Futhermore, SQLite does not support all the capabilities
+    of other SQL databases such as stored procedures or triggers. Lastly, SQLite does not validate data types
+    that is, SQLite will not reject values of the wrong type and as a result accidently insert  the wrong data
+    types in the columns. While SQLite allows the storage of different datatypes in the same column, this is a
+    bad habit that can lead to errors so its best to avoid it.
+
+Uses for SQLite
+    Despite the drawbacks, the benefits of a serverless database are huge. SQLite is used worldwide for testing,
+    development, and any senerio where it makes sense for the database to be on the same disk as the application
+    code.
