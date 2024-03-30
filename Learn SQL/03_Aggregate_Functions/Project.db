@@ -11,7 +11,7 @@
     --Query 10: Query the average cost of the apps for each category where the we do not consider the free apps and we do not consider
     -- categorys that exceed 9.99 in price.
 
---Instructions to recreate the DB
+--Instructions to recreate the DB, Solutions below
     CREATE TABLE fake_apps (
     id INTEGER, 
     name TEXT,
@@ -219,3 +219,50 @@
     INSERT INTO fake_apps (id, name, category, downloads, price) VALUES (985,	'tonkix',	'Games',	19498,	0.0);
     INSERT INTO fake_apps (id, name, category, downloads, price) VALUES (992,	'Acecane',	'Entertainment',	13359,	0.0);
     INSERT INTO fake_apps (id, name, category, downloads, price) VALUES (1000,	'Plusvolzim',	'News',	11448,	0.0);
+
+--Solutions to Query
+    --Query 1: Query the number of apps that are not free.
+        SELECT COUNT(*) 
+        FROM fake_apps WHERE price != 0.0;
+        -- Returns 127 are free out of 200 total entries.
+    --Query 2: Query the amount of money needed to buy all of apps.
+        SELECT SUM(price) 
+        FROM fake_apps;
+        -- Returns 404.73 dollars to buy all the apps.
+    --Query 3: Query the maximum number of downloads from all the apps.
+        SELECT MAX(downloads) 
+        FROM fake_apps;
+        -- Returns 31,090 which is the maximum number of downloads in any entry.
+    --Query 4: Query the average number of downloads of all the apps in the Books category.
+        SELECT AVG(downloads) 
+        FROM fake_apps WHERE category = 'Books';
+        -- Returns 20108.0 which is the average number of downloads from the books category.
+    --Query 5: Query the average cost of an app in the Games category and rounded to the second decimal point.
+        SELECT ROUND(AVG(price), 2) 
+        FROM fake_apps WHERE category = 'Games';
+        -- Returns 1.64 which is 1.64176470588235 rounded to the second value which represents the average cost of the apps in the game category.
+    --Query 6: Query the total number of downloads 
+        SELECT SUM(downloads) 
+        FROM fake_apps;
+        -- Returns 3,322,760 which is the total number of downloads of all the apps.
+    --Query 7: Query the average cost of the apps grouped by their category.
+        SELECT category, AVG(price) 
+        FROM fake_apps 
+        GROUP BY category;
+        -- Returns the list of categories along with the average price of each category's apps.
+    --Query 8: Query the average downloads of the apps grouped by their category where each category must have more than 10 apps.
+        SELECT category, AVG(downloads) 
+        FROM fake_apps 
+        GROUP BY category HAVING COUNT(*) > 10;
+        -- Returns the list of categories (educations, games, sports, and travel) that have more than 10 apps and the number of average downloads they have.
+    --Query 9: Query the maximum cost of the apps for each category where each category must have a cost equal to or less than 9.99
+        SELECT category, MAX(price)
+        FROM fake_apps 
+        GROUP BY category HAVING MAX(price) <= 9.99;
+        -- Returns each category where the maximum app price is less than 9.99
+    --Query 10: Query the average cost of the apps for each category where we do not consider the free apps and we do not consider
+    -- categories that exceed 9.99 in price and sort in price ascending order. Round the output averages by 2 decimal places.
+        SELECT category, ROUND(AVG(price), 2)
+        FROM fake_apps WHERE price != 0.0
+        GROUP BY category HAVING MAX(price) < 10
+        ORDER BY price ASC;
