@@ -1,1 +1,4 @@
+
 *.sql linguist-detectable=true
+*.sql linguist-language=SQL
+ano-Learn_SQL/** linguist-documentation
