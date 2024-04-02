@@ -35,15 +35,15 @@
    --Instructions
    --First add a row into the table using the following, notice each column has a correlating value.
    INSERT INTO celebs (id, name, age) 
-   VALUES (1, 'Justin Bieber', 29);
+      VALUES (1, 'Justin Bieber', 29);
    --Look at the Database Schema. How many rows are in the celebs table? ANSWER: 1 row.
    --Insert 3 more celebrities beneath the previous statement
    INSERT INTO celebs (id, name, age) 
-   VALUES (2, 'Beyonce Knowles', 42); 
+      VALUES (2, 'Beyonce Knowles', 42); 
    INSERT INTO celebs (id, name, age) 
-   VALUES (3, 'Jeremy Lin', 35); 
+      VALUES (3, 'Jeremy Lin', 35); 
    INSERT INTO celebs (id, name, age) 
-   VALUES (4, 'Taylor Swift', 33); 
+      VALUES (4, 'Taylor Swift', 33); 
    --expected results, inserts 3 new rows into the table celebs
    --Look at the Database Schema. How many rows are in the celebs table now? 4 rows.
    
@@ -64,7 +64,7 @@
 --Lesson Seven:     Alter
    --The ALTER TABLE statement adds a new column to a table.
    ALTER TABLE celebs 
-   ADD COLUMN twitter_handle TEXT;
+      ADD COLUMN twitter_handle TEXT;
    -- ALTER TABLE is a clause that lets you make the specified changes.
    -- Celebs is the name of the table that is being changed.
    -- ADD COLUMN is a clause that lets you add a new column to a table:
@@ -72,7 +72,7 @@
    -- the datatype TEXT.
    --Instructions
    ALTER TABLE celebs 
-   ADD COLUMN twitter_handle TEXT; 
+      ADD COLUMN twitter_handle TEXT; 
    SELECT * FROM celebs;
    --expected results, returns all columns and the new column labbelled twitter_handle is full of null values.
 
@@ -80,8 +80,8 @@
    --The UPDATE statement edits a row in a table.
    --You can use the UPDATE statement when you want to change existing records.
    UPDATE celebs 
-   SET twitter_handle = '@taylorswift13' 
-   WHERE id = 4; 
+      SET twitter_handle = '@taylorswift13' 
+      WHERE id = 4; 
    --The statement updates the record with an id value of 4 to have the twitter_handle @taylorswift13.
    --UPDATE is a clause that edits a row in the table with the table being specified as celebs
    --SET is a clause that indicates the column to edit and twitter_handle = '@taylorswift13' indicates what to override it to
@@ -89,8 +89,8 @@
    --Here the row with a 4 in the id column is the row that will have the twitter_handle updated to @taylorswift13.
    --Instructions
    UPDATE celebs 
-   SET twitter_handle = '@taylorswift13' 
-   WHERE id = 4; 
+      SET twitter_handle = '@taylorswift13' 
+      WHERE id = 4; 
    SELECT * FROM celebs;
    --expected results, the table will return all rows and the table will reflect the twitter_handle column update to @taylorswift13
    -- made to the row with id=4
@@ -98,13 +98,13 @@
 --Lesson Nine:      Delete
    --The DELETE FROM statement deletes one or more rows from a table.
    DELETE FROM celebs 
-   WHERE twitter_handle IS NULL;
+      WHERE twitter_handle IS NULL;
    -- DELETE FROM is a clause that lets you delete rows from a table with the table celebs specified.
    -- WHERE is a clause that lets you select which rows you want to delete. Here we want to delete all of the rows where the twitter_handle column IS NULL.
    -- IS NULL is a condition in SQL that returns true when the value is NULL and false otherwise.
    --Instructions
    DELETE FROM celebs 
-   WHERE twitter_handle IS NULL;
+      WHERE twitter_handle IS NULL;
    SELECT * FROM celebs;
    --How many rows exist in the celebs table now? Answer, 1 as we only altered 1 row to contain a twitter handle
    --expected results, only the row with the updated handle is returned as all records that were null were deleted
