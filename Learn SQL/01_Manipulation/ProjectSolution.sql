@@ -53,11 +53,11 @@ VALUES (6, 'Kaleb Gentry', 300, '3/25/24');
     INSERT INTO Deposits (Player, Deposit_Amount, Date) VALUES ('Robert Pat', 500, '3/25/24');
 --    4g) Add a new column called 'Deposit_Time' and autofill each entry with the time '12:00AM'.
     ALTER TABLE Deposits
-    ADD COLUMN Deposit_Time TEXT DEFAULT '12:00AM';
+        ADD COLUMN Deposit_Time TEXT DEFAULT '12:00AM';
 --    4h) Delete the deposit with DepositID 2 from the Deposits table;
     DELETE FROM Deposits WHERE DepositID = 2;
 --    4i) Delete the column called 'Deposit_Time'.
     ALTER TABLE Deposits
-    DROP COLUMN Deposit_Time;
+        DROP COLUMN Deposit_Time;
 --    4j) Retrieve the details of the remaining deposits.
     SELECT * FROM Deposits;

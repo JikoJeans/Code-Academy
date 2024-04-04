@@ -17,11 +17,11 @@
 
 --Instructions to recreate the DB and Solutions below
     CREATE TABLE movies (
-    id INTEGER PRIMARY KEY, 
-    name TEXT UNIQUE,
-    genre TEXT,
-    year INTEGER,
-    imdb_rating FLOAT
+        id INTEGER PRIMARY KEY, 
+        name TEXT UNIQUE,
+        genre TEXT,
+        year INTEGER,
+        imdb_rating FLOAT
     );
     --230 entries for the test database
     INSERT INTO movies (id, name, genre, year, imdb_rating) VALUES (1,	'Avatar',	'action',	2009,	7.9);
@@ -292,8 +292,8 @@
     --Query 12: Query all the movies but for each imdb_rating section(10-7, 7-3, 3-0) and replace the rating with the following
     -- labels (Great, Descent, Avoid) and rename the results to be called 'Movie Review'.
         SELECT name, imdb_rating,
-        CASE
-            WHEN imdb_rating > 7 THEN 'Great'
-            WHEN imdb_rating > 3 THEN 'Descent'
-            WHEN imdb_rating < 4 THEN 'Avoid'
-        END AS 'Movie Review' FROM movies;
+            CASE
+                WHEN imdb_rating > 7 THEN 'Great'
+                WHEN imdb_rating > 3 THEN 'Descent'
+                WHEN imdb_rating < 4 THEN 'Avoid'
+            END AS 'Movie Review' FROM movies;
