@@ -1,4 +1,4 @@
--- This project will utilize 3 databases all stored within the same animals.sqlite.
+-- This project will utilize 3 databases all stored within the same animalHospital.sqlite.
 
 --Animal Table Declaration
     -- CREATE TABLE animals(
