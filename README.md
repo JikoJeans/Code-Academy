@@ -17,6 +17,9 @@ Learn powerful functions for performing complex database operations with ease. C
 ### Section 4: Multiple Tables
 Expand SQL skills by creating and manipulating databases with multiple related tables. Contains 1 lesson,and project.
 
+### Section 5: Independent Study
+This final section covers one query for each clause learned along with 10 coumpound queries to practice sql in a practical manner.
+
 ## Contributions
 Feel free to review to this repository for help or fork this repository and add your own solutions to it. I'd love to see how others approach these and other problems!
 
