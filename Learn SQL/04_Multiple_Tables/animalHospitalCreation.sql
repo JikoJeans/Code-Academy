@@ -39,7 +39,7 @@ CREATE TABLE orders (
 INSERT INTO animals (ID, name, gender, type, birth_year, owner_ID)
 VALUES(1,  	'Cookie', 	'Male',   	'Bird',	        2011,	23);
 INSERT INTO animals (ID, name, gender, type, birth_year, owner_ID)
-VALUES(2,  	'Gus',    	'Male',   	'Cats',	        2021,	100);
+VALUES(2,  	'Gus',    	'Male',   	'Cat',	        2021,	100);
 INSERT INTO animals (ID, name, gender, type, birth_year, owner_ID)
 VALUES(3,  	'Apollo', 	'Male',   	'Hamster',	    2021,	95);
 INSERT INTO animals (ID, name, gender, type, birth_year, owner_ID)
@@ -57,7 +57,7 @@ VALUES(9,  	'Zeus',   	'Male',   	'Gecko',	    2006,	1);
 INSERT INTO animals (ID, name, gender, type, birth_year, owner_ID)
 VALUES(10, 	'Layla',  	'Female', 	'Dog',	        2019,	7);
 INSERT INTO animals (ID, name, gender, type, birth_year, owner_ID)
-VALUES(11, 	'Benji',  	'Male',   	'Cats',	        2010,	42);
+VALUES(11, 	'Benji',  	'Male',   	'Cat',	        2010,	42);
 INSERT INTO animals (ID, name, gender, type, birth_year, owner_ID)
 VALUES(12, 	'Lucy',   	'Female', 	'Gecko',	    2011,	18);
 INSERT INTO animals (ID, name, gender, type, birth_year, owner_ID)
@@ -79,7 +79,7 @@ VALUES(20, 	'Teddy',  	'Male',   	'Turtle',	    2010,	13);
 INSERT INTO animals (ID, name, gender, type, birth_year, owner_ID)
 VALUES(21, 	'Zoey',   	'Female', 	'Gecko',	    2021,	66);
 INSERT INTO animals (ID, name, gender, type, birth_year, owner_ID)
-VALUES(22, 	'Lucky',  	'Male',   	'Cats',	        2011,	38);
+VALUES(22, 	'Lucky',  	'Male',   	'Cat',	        2011,	38);
 INSERT INTO animals (ID, name, gender, type, birth_year, owner_ID)
 VALUES(23, 	'Leo',    	'Male',   	'Gecko',	    2013,	86);
 INSERT INTO animals (ID, name, gender, type, birth_year, owner_ID)
@@ -87,11 +87,11 @@ VALUES(24, 	'Roxy',   	'Female', 	'Rabbit',	    2009,	15);
 INSERT INTO animals (ID, name, gender, type, birth_year, owner_ID)
 VALUES(25, 	'Lady',   	'Female', 	'Dog',	        2018,	13);
 INSERT INTO animals (ID, name, gender, type, birth_year, owner_ID)
-VALUES(26, 	'Winnie', 	'Female', 	'Cats',	        2024,	15);
+VALUES(26, 	'Winnie', 	'Female', 	'Cat',	        2024,	15);
 INSERT INTO animals (ID, name, gender, type, birth_year, owner_ID)
 VALUES(27, 	'Bailey', 	'Male',   	'Bird',	        2021,	19);
 INSERT INTO animals (ID, name, gender, type, birth_year, owner_ID)
-VALUES(28, 	'Milo',   	'Male',   	'Cats',	        2007,	94);
+VALUES(28, 	'Milo',   	'Male',   	'Cat',	        2007,	94);
 INSERT INTO animals (ID, name, gender, type, birth_year, owner_ID)
 VALUES(29, 	'Lola',   	'Female', 	'Gecko',	    2020,	54);
 INSERT INTO animals (ID, name, gender, type, birth_year, owner_ID)
@@ -99,7 +99,7 @@ VALUES(30, 	'Zoey',   	'Female', 	'Gecko',	    2018,	57);
 INSERT INTO animals (ID, name, gender, type, birth_year, owner_ID)
 VALUES(31, 	'Louie',  	'Male',   	'Bird',	        2014,	87);
 INSERT INTO animals (ID, name, gender, type, birth_year, owner_ID)
-VALUES(32, 	'Abby',   	'Female', 	'Cats',	        2022,	44);
+VALUES(32, 	'Abby',   	'Female', 	'Cat',	        2022,	44);
 INSERT INTO animals (ID, name, gender, type, birth_year, owner_ID)
 VALUES(33, 	'Ace',    	'Male',   	'Rabbit',	    2017,	48);
 INSERT INTO animals (ID, name, gender, type, birth_year, owner_ID)
@@ -115,7 +115,7 @@ VALUES(38, 	'Buddy',  	'Male',   	'Hamster',	    2011,	49);
 INSERT INTO animals (ID, name, gender, type, birth_year, owner_ID)
 VALUES(39, 	'Ollie',  	'Male',   	'Turtle',	    2017,	83);
 INSERT INTO animals (ID, name, gender, type, birth_year, owner_ID)
-VALUES(40, 	'Lucy',   	'Female', 	'Cats',	        2009,	88);
+VALUES(40, 	'Lucy',   	'Female', 	'Cat',	        2009,	88);
 INSERT INTO animals (ID, name, gender, type, birth_year, owner_ID)
 VALUES(41, 	'Harley', 	'Male',   	'Dog',	        2018,	67);
 INSERT INTO animals (ID, name, gender, type, birth_year, owner_ID)
@@ -133,13 +133,13 @@ VALUES(47, 	'Lily',   	'Female', 	'Hamster',	    2024,	51);
 INSERT INTO animals (ID, name, gender, type, birth_year, owner_ID)
 VALUES(48, 	'Blue',   	'Male',   	'Dog',	        2024,	61);
 INSERT INTO animals (ID, name, gender, type, birth_year, owner_ID)
-VALUES(49, 	'Jax',    	'Male',   	'Cats',	        2021,	32);
+VALUES(49, 	'Jax',    	'Male',   	'Cat',	        2021,	32);
 INSERT INTO animals (ID, name, gender, type, birth_year, owner_ID)
-VALUES(50, 	'Finn',   	'Male',   	'Cats',	        2023,	13);
+VALUES(50, 	'Finn',   	'Male',   	'Cat',	        2023,	13);
 INSERT INTO animals (ID, name, gender, type, birth_year, owner_ID)
 VALUES(51, 	'Lily',   	'Female', 	'Gecko',	    2022,	74);
 INSERT INTO animals (ID, name, gender, type, birth_year, owner_ID)
-VALUES(52, 	'Maggie', 	'Female', 	'Cats',	        2023,	4);
+VALUES(52, 	'Maggie', 	'Female', 	'Cat',	        2023,	4);
 INSERT INTO animals (ID, name, gender, type, birth_year, owner_ID)
 VALUES(53, 	'Piper',  	'Female', 	'Turtle',	    2010,	6);
 INSERT INTO animals (ID, name, gender, type, birth_year, owner_ID)
@@ -181,7 +181,7 @@ VALUES(71, 	'Ginger', 	'Female', 	'Turtle',	    2017,	67);
 INSERT INTO animals (ID, name, gender, type, birth_year, owner_ID)
 VALUES(72, 	'Willow', 	'Male',   	'Turtle',	    2022,	74);
 INSERT INTO animals (ID, name, gender, type, birth_year, owner_ID)
-VALUES(73, 	'Pepper', 	'Female', 	'Cats',	        2007,	35);
+VALUES(73, 	'Pepper', 	'Female', 	'Cat',	        2007,	35);
 INSERT INTO animals (ID, name, gender, type, birth_year, owner_ID)
 VALUES(74, 	'Leo',    	'Male',   	'Hamster',	    2017,	81);
 INSERT INTO animals (ID, name, gender, type, birth_year, owner_ID)
@@ -215,7 +215,7 @@ VALUES(88, 	'Thor',   	'Male',   	'Rabbit',	    2009,	1);
 INSERT INTO animals (ID, name, gender, type, birth_year, owner_ID)
 VALUES(89, 	'Scout',  	'Male',   	'Rabbit',	    2014,	74);
 INSERT INTO animals (ID, name, gender, type, birth_year, owner_ID)
-VALUES(90, 	'Archie', 	'Male',   	'Cats',	        2005,	19);
+VALUES(90, 	'Archie', 	'Male',   	'Cat',	        2005,	19);
 INSERT INTO animals (ID, name, gender, type, birth_year, owner_ID)
 VALUES(91, 	'Sophie', 	'Female', 	'Dog',	        2012,	39);
 INSERT INTO animals (ID, name, gender, type, birth_year, owner_ID)
@@ -237,15 +237,15 @@ VALUES(99, 	'Cooper', 	'Male',   	'Hamster',	    2006,	12);
 INSERT INTO animals (ID, name, gender, type, birth_year, owner_ID)
 VALUES(100,	'Rocky',  	'Male',   	'Turtle',	    2020,	75);
 INSERT INTO animals (ID, name, gender, type, birth_year, owner_ID)
-VALUES(101,	'Bentley',   'Male',   	'Cats',	        2011,	96);
+VALUES(101,	'Bentley',   'Male',   	'Cat',	        2011,	96);
 INSERT INTO animals (ID, name, gender, type, birth_year, owner_ID)
-VALUES(102,	'Poppy',  	'Female', 	'Cats',	        2018,	70);
+VALUES(102,	'Poppy',  	'Female', 	'Cat',	        2018,	70);
 INSERT INTO animals (ID, name, gender, type, birth_year, owner_ID)
 VALUES(103,	'Lady',   	'Female', 	'Bird',	        2022,	30);
 INSERT INTO animals (ID, name, gender, type, birth_year, owner_ID)
 VALUES(104,	'Henry',  	'Male',   	'Hamster',	    2022,	15);
 INSERT INTO animals (ID, name, gender, type, birth_year, owner_ID)
-VALUES(105,	'Nova',   	'Female', 	'Cats',	        2021,	90);
+VALUES(105,	'Nova',   	'Female', 	'Cat',	        2021,	90);
 INSERT INTO animals (ID, name, gender, type, birth_year, owner_ID)
 VALUES(106,	'Gus',    	'Male',   	'Rabbit',	    2015,	41);
 INSERT INTO animals (ID, name, gender, type, birth_year, owner_ID)
@@ -267,9 +267,9 @@ VALUES(114,	'Mia',    	'Female', 	'Turtle',	    2018,	99);
 INSERT INTO animals (ID, name, gender, type, birth_year, owner_ID)
 VALUES(115,	'Molly',  	'Female', 	'Turtle',	    2022,	55);
 INSERT INTO animals (ID, name, gender, type, birth_year, owner_ID)
-VALUES(116,	'Peanut', 	'Female', 	'Cats',	        2006,	95);
+VALUES(116,	'Peanut', 	'Female', 	'Cat',	        2006,	95);
 INSERT INTO animals (ID, name, gender, type, birth_year, owner_ID)
-VALUES(117,	'Zeus',   	'Male',   	'Cats',	        2023,	27);
+VALUES(117,	'Zeus',   	'Male',   	'Cat',	        2023,	27);
 INSERT INTO animals (ID, name, gender, type, birth_year, owner_ID)
 VALUES(118,	'Coco',   	'Female', 	'Gecko',	    2017,	69);
 INSERT INTO animals (ID, name, gender, type, birth_year, owner_ID)
@@ -279,7 +279,7 @@ VALUES(120,	'Charlie',  'Male',   	'Rabbit',	    2020,	93);
 INSERT INTO animals (ID, name, gender, type, birth_year, owner_ID)
 VALUES(121,	'Roxy',   	'Female', 	'Bird',	        2017,	84);
 INSERT INTO animals (ID, name, gender, type, birth_year, owner_ID)
-VALUES(122,	'Cooper', 	'Male',   	'Cats',	        2024,	41);
+VALUES(122,	'Cooper', 	'Male',   	'Cat',	        2024,	41);
 INSERT INTO animals (ID, name, gender, type, birth_year, owner_ID)
 VALUES(123,	'Jake',   	'Male',   	'Rabbit',	    2019,	19);
 INSERT INTO animals (ID, name, gender, type, birth_year, owner_ID)
@@ -315,17 +315,17 @@ VALUES(138,	'Marley', 	'Male',   	'Bird',	        2021,	44);
 INSERT INTO animals (ID, name, gender, type, birth_year, owner_ID)
 VALUES(139,	'Lucky',  	'Male',   	'Turtle',	    2015,	2);
 INSERT INTO animals (ID, name, gender, type, birth_year, owner_ID)
-VALUES(140,	'Finn',   	'Male',   	'Cats',	        2009,	76);
+VALUES(140,	'Finn',   	'Male',   	'Cat',	        2009,	76);
 INSERT INTO animals (ID, name, gender, type, birth_year, owner_ID)
-VALUES(141,	'Ellie',  	'Female', 	'Cats',	        2009,	16);
+VALUES(141,	'Ellie',  	'Female', 	'Cat',	        2009,	16);
 INSERT INTO animals (ID, name, gender, type, birth_year, owner_ID)
 VALUES(142,	'Milo',   	'Male',   	'Turtle',	    2014,	100);
 INSERT INTO animals (ID, name, gender, type, birth_year, owner_ID)
 VALUES(143,	'Ginger', 	'Female', 	'Bird',	        2014,	29);
 INSERT INTO animals (ID, name, gender, type, birth_year, owner_ID)
-VALUES(144,	'Oreo',   	'Male',   	'Cats',	        2016,	43);
+VALUES(144,	'Oreo',   	'Male',   	'Cat',	        2016,	43);
 INSERT INTO animals (ID, name, gender, type, birth_year, owner_ID)
-VALUES(145,	'Angel',  	'Female', 	'Cats',	        2011,	25);
+VALUES(145,	'Angel',  	'Female', 	'Cat',	        2011,	25);
 INSERT INTO animals (ID, name, gender, type, birth_year, owner_ID)
 VALUES(146,	'Luna',   	'Female', 	'Dog',	        2006,	39);
 INSERT INTO animals (ID, name, gender, type, birth_year, owner_ID)
@@ -339,7 +339,7 @@ VALUES(150,	'Lexi',   	'Female', 	'Hamster',	    2007,	100);
 INSERT INTO animals (ID, name, gender, type, birth_year, owner_ID)
 VALUES(151,	'Jack',   	'Male',   	'Rabbit',	    2009,	29);
 INSERT INTO animals (ID, name, gender, type, birth_year, owner_ID)
-VALUES(152,	'Apollo', 	'Male',   	'Cats',	        2006,	31);
+VALUES(152,	'Apollo', 	'Male',   	'Cat',	        2006,	31);
 INSERT INTO animals (ID, name, gender, type, birth_year, owner_ID)
 VALUES(153,	'Willow', 	'Male',   	'Hamster',	    2017,	13);
 INSERT INTO animals (ID, name, gender, type, birth_year, owner_ID)
@@ -361,7 +361,7 @@ VALUES(161,	'Poppy',  	'Female', 	'Dog',	        2024,	87);
 INSERT INTO animals (ID, name, gender, type, birth_year, owner_ID)
 VALUES(162,	'Remi',   	'Male',   	'Dog',	        2012,	43);
 INSERT INTO animals (ID, name, gender, type, birth_year, owner_ID)
-VALUES(163,	'Buddy',  	'Male',   	'Cats',	        2010,	29);
+VALUES(163,	'Buddy',  	'Male',   	'Cat',	        2010,	29);
 INSERT INTO animals (ID, name, gender, type, birth_year, owner_ID)
 VALUES(164,	'Peanut', 	'Female', 	'Bird',	        2023,	37);
 INSERT INTO animals (ID, name, gender, type, birth_year, owner_ID)
@@ -373,7 +373,7 @@ VALUES(167,	'Koda',   	'Male',   	'Turtle',	    2019,	99);
 INSERT INTO animals (ID, name, gender, type, birth_year, owner_ID)
 VALUES(168,	'Toby',   	'Male',   	'Turtle',	    2016,	97);
 INSERT INTO animals (ID, name, gender, type, birth_year, owner_ID)
-VALUES(169,	'Abby',   	'Female', 	'Cats',	        2020,	70);
+VALUES(169,	'Abby',   	'Female', 	'Cat',	        2020,	70);
 INSERT INTO animals (ID, name, gender, type, birth_year, owner_ID)
 VALUES(170,	'Izzy',   	'Female', 	'Hamster',	    2018,	3);
 INSERT INTO animals (ID, name, gender, type, birth_year, owner_ID)
@@ -381,7 +381,7 @@ VALUES(171,	'Bella',  	'Female', 	'Dog',	        2017,	60);
 INSERT INTO animals (ID, name, gender, type, birth_year, owner_ID)
 VALUES(172,	'Murphy', 	'Male',   	'Gecko',	    2005,	4);
 INSERT INTO animals (ID, name, gender, type, birth_year, owner_ID)
-VALUES(173,	'Lilly',  	'Male',   	'Cats',	        2010,	86);
+VALUES(173,	'Lilly',  	'Male',   	'Cat',	        2010,	86);
 INSERT INTO animals (ID, name, gender, type, birth_year, owner_ID)
 VALUES(174,	'Piper',  	'Female', 	'Dog',	        2021,	3);
 INSERT INTO animals (ID, name, gender, type, birth_year, owner_ID)
@@ -419,7 +419,7 @@ VALUES(190,	'Nova',   	'Female', 	'Gecko',	    2010,	63);
 INSERT INTO animals (ID, name, gender, type, birth_year, owner_ID)
 VALUES(191,	'Lilly',  	'Male',   	'Gecko',	    2011,	64);
 INSERT INTO animals (ID, name, gender, type, birth_year, owner_ID)
-VALUES(192,	'Hazel',  	'Female', 	'Cats',	        2021,	66);
+VALUES(192,	'Hazel',  	'Female', 	'Cat',	        2021,	66);
 INSERT INTO animals (ID, name, gender, type, birth_year, owner_ID)
 VALUES(193,	'Zoe',    	'Female', 	'Dog',	        2022,	9);
 INSERT INTO animals (ID, name, gender, type, birth_year, owner_ID)
@@ -427,7 +427,7 @@ VALUES(194,	'Ace',    	'Male',   	'Gecko',	    2009,	72);
 INSERT INTO animals (ID, name, gender, type, birth_year, owner_ID)
 VALUES(195,	'Bruno',  	'Male',   	'Hamster',	    2016,	85);
 INSERT INTO animals (ID, name, gender, type, birth_year, owner_ID)
-VALUES(196,	'Beau',   	'Female', 	'Cats',	        2006,	6);
+VALUES(196,	'Beau',   	'Female', 	'Cat',	        2006,	6);
 INSERT INTO animals (ID, name, gender, type, birth_year, owner_ID)
 VALUES(197,	'Dixie',  	'Male',   	'Gecko',	    2021,	11);
 INSERT INTO animals (ID, name, gender, type, birth_year, owner_ID)
@@ -1051,4 +1051,4 @@ VALUES(198, 50,     13,     'Check up',	29,	2032,	5,	'Scheduled');
 INSERT INTO orders (ID, animal_ID, owner_ID, type, cost, year, month, status)
 VALUES(199, 50,     13,     'Check up',	29,	2033,	8,	'Scheduled');
 INSERT INTO orders (ID, animal_ID, owner_ID, type, cost, year, month, status)
-VALUES(200, 59,     30,     'Shots',	49,	2034,	10,	'Schedule');
+VALUES(200, 59,     30,     'Shots',	49,	2034,	10,	'Scheduled');
