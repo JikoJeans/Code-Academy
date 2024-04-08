@@ -60,5 +60,53 @@ print(f'Message with function {newFunction}!')
 print('Message with 1 {}!'.format(example_variable))
 
 #Lesson Four:      Variables
-#Lesson Five:      Data Types
+    # Declaring Variables
+        # The declaration of variables can be done with the following syntax
+var = 'New Variable!'
+        # Similarly reasigning a variable is done with the same syntax
+var = 'New Value Same Variable!'
+        # Notice there is no need to declare data types so we can simply declare
+        #  the following variables to get an integer and float.
+integer_variable = 144
+float_variable = 96.3
+    # Casting
+        # Similar to other languages casting can be done using the constructor
+        #  functions like str(), int(), float(), bool(), etc.
+integer_to_string = str(144)
+integer_to_string = str(integer_variable)
+float_to_integer = int(96.3)
+float_to_integer = int(float_variable)
+    # Printing the Data Type of a Variable
+        # In order to output the data type of a variable we utilize the built-in
+        #  type() function
+type(integer_to_string)  #  prints str
+type(float_to_integer)  #  prints int
+
+#Lesson Five:      Basic Data Types
+    # Integer
+        # 'int's store integer values that can be assigned by using a whole number
+        #  or with the int() constructor.
+first_integer = 30
+second_integer = int(96.3)
+    # Float
+        # 'float's store floating point numbers which refer to rational numbers
+        #  with a decimal value. Again we can declare the value with a rational
+        #  number with a decimal value or with the float() constructor.
+first_float = 96.3
+second_float = float(96.3)
+    # Boolean
+        # 'bool's store either a true or false value. We can use either the
+        #   keywords True or False or we can assign it using the bool() constructor.
+        #   The bool() function will always return True unless the variable is
+        #   empty, 0, None, or False.
+first_boolean = True
+second_boolean = bool('False')
+    # String
+        # 'string' variables hold characters and can be created with either single
+        #  qoutes '' or double doutes "". They can also be created with the
+        #  built-in str() to specify that a string should be stored.
+first_string = 'test string'
+second_string = "next string"
+third_string = str(96.3)
+
 #Lesson Six:       Operators
