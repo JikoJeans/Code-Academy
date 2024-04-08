@@ -110,3 +110,44 @@ second_string = "next string"
 third_string = str(96.3)
 
 #Lesson Six:       Operators
+    # Arithmetic Operators
+        # Arithmetic Operators can be used to perform mathmatical operators on
+        #  numberical data types such as int or floats. The list of common
+        #  common arithmetic operators used is as follows:
+x = 1
+y = 2
+z = x + y   # Addition          - x plus y
+z = x - y   # Subraction        - x minus y
+z = x * y   # Multiplication    - x times y
+z = x ** y  # Exponentiation    - x raised to the power of y
+z = x / y   # Division          - x divided by y
+z = x // y  # Floor Division    - x divided by y and rounded to an integer
+z = x % y   # Modulo            - The remainder of x divided by y
+
+    # Assignment Operators
+        # The assignment operators consists of the assignment operator along with
+        #  the compound varients represented below:
+z = 1       # Assigns 1 to z
+z += 1      # Updates z to z + 1
+z -= 1      # Updates z to z - 1
+z *= 1      # Updates z to z * 1
+z /= 1      # Updates z to z / 1
+z %= 1      # Updates z to z % 1
+
+    # Comparison Operators
+        # Comparison operators are used to compare 2 varibles and as a result only
+        #  return true or false. Some examples are:
+z == y      # Returns true when z is equal to y
+z != y      # Returns true when z is not equal to y
+z > y       # Returns true when z is greater than to y
+z < y       # Returns true when z is less than to y
+z >= y      # Returns true when z is greater than or equal to y
+z <= y      # Returns true when z is less than or equal to y
+
+    # Logical Operators
+        # Logical operators are used to combine and evaluate multiple conditions
+        #  and again only return true or false. Some examples are:
+
+z == y and y > 1        # If both z == 1 and y > 1 then the statement returns true
+z == y or y < 0         # If either z == 1 and y > 1 then the statement returns true
+not(z == y)             # Not returns the inverse of the solution so true if z != y
