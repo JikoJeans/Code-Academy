@@ -75,3 +75,18 @@ factorial(3)
         #  in doing so, notice merge sort can achieve O(nlogn) sorting time.
         
 #Lesson Three:     Lambda Functions
+    # Lamnda Function Syntax
+        # A lambda function in Python is a simple anonymous function that does not
+        #  use the def keyword to declare it. The lambda function can have multiple
+        #  arguments but only one expression and it can be contained in one line
+        #  of code as seen below:
+double_it = lambda x: x + x
+        # We can then call the function using double_it(). This is considered
+        # anonymous because it is not defined with the def keyword.
+value = double_it(2)  #  would then assign 4 to value
+
+    # Why Use Lamda Functions?
+        # Lambda functions are typically used for the following scenerios:
+            # When we want to write a quick function and minize the program size.
+            # When we want to combine it with other built-in functions such
+            #  as map(), filter(), and apply() to filter for data.
