@@ -36,4 +36,42 @@ call_by_reference(char_list)
 print(char_list)  #  Outputs ['A', 'B', 'C', 'D']
 
 #Lesson Two:       Recursion
+    # What Is A Recursive Function
+        # A recursive function contains 2 parts: a recursive step and a base case
+        # that are utilized before the function calls itself. In the function below
+        # we can see an example of this with the factorial function:
+def factorial(num):
+    if num == 1:
+        return 1
+    else:
+        return num * factorial(num-1)
+    
+    # Recursive Step
+        # The recursive step refers to the step that calls the function that is
+        #  already being executed. In this example the recursive step is the
+        #  line of code under the else statement.
+
+    # Base Case
+        # Each recursive problem should have a base case to help avoid infinite
+        #  recursion. In the example above the base case occurs when the condition
+        #  num == 1 is true and returns 1 as a result. Without this base case the
+        #  function would continue after factorial(1) onto factorial(0) then
+        #  factorial(-1) and so on infinitely.
+    
+    # How It Works
+        # The factorial function can be visualized with the steps below
+factorial(3)
+        # Upon 3 as the input the function would run as follows
+        # step 1: The recursive step occurs returning 3 * factorial(3 - 1)
+        # step 2: The recursive step occurs again returning 2 * factorial(2 - 1)
+        # step 3: We reach the base case and return 1. Step 2 would then return
+        # 2 * 1 which would propagate up to step 1 which would return the final
+        # value of 6 for 3 factorial.
+
+    # Why use Recursion?
+        # It produces clear code, reducing the need to repeat code.
+        # It can be used for advance data structures problems.
+        # It splits a complex task into smaller task and can be efficient
+        #  in doing so, notice merge sort can achieve O(nlogn) sorting time.
+        
 #Lesson Three:     Lambda Functions
