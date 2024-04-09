@@ -143,4 +143,29 @@ print(f"self contains: {new_var.slot1} {new_var.storage1} {new_var.storage2}")
 
 #Lesson Six:       Polymorphism
     # Polymorphism with Classes
-        # 
+        # Polymorphism is the concept of classes sharing methods with the same
+        #  name. In Python, classes are allowed to contain methods that share
+        #  the same name as another method from a different class. An example
+        #  can be found below with the example of shorts and pants
+class Shirt():
+    def type(self):
+        print('This is a shirt')
+    def cost(self):
+        print('This shirt cost $10 USD')
+
+class Pants():
+    def type(self):
+        print('This is a pair of pants')
+    def cost(self):
+        print('The pants cost $5 USD')
+
+clothing_a = Shirt()
+clothing_b = Pants()
+for clothing_item in (clothing_a, clothing_b):
+    clothing_item.type()
+    clothing_item.cost()
+    # would output:
+    #  This is a shirt
+    #  This shirt cost $10 USD
+    #  This is a pair of pants
+    #  The pants cost $5 USD
