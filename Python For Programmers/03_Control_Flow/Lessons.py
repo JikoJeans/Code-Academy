@@ -81,8 +81,40 @@ while current_index < 3:
         #  occures ctrl+c can be used to terminate the program.
 
 #Lesson Three:     Pass, Break, Continue
-#Lesson Four:      Python Code Challenges Loops
-#Lesson Five:      Python Code Challenges Loops (Advanced)
-#Lesson Six:       Error Handling
-#Lesson Seven:     Python Code Challenges: Control Flow
-#Lesson Eight:     Python Code Challenges: Control Flow (Advanced)
+    # pass
+        # The pass keyword is m,ostly used as a placeholder in a loop. Nothing
+        #  is executed when pass is placed under a condition. In the following
+        #  example the code will print out the name only if it does not contain
+        #  an j:
+name_set = ['George', 'Juan', 'Lisa', 'Jose']
+for name in name_set:
+        if 'j' in name.lower():
+            pass  #  skips this iteration
+        else:
+            print(name)
+    
+    # break
+        # The break keyword terminates the loop and is typically used to stop loops
+        #  after a condition has been met. In the example below the condition that
+        #  ends the loop is when a name contains an l:
+for name in name_set:
+        if 'l' in name.lower():
+            break  #  ends the for loop after 'lisa'
+        else:
+            print(name)
+
+    # continue
+        # The continue keywords skips over an iteration if the condition is met
+        #  and goes onto the next iteration. The primary difference betweek pass
+        #  and continue is that continue goes onto the next iteration of the loop
+        #  while pass does not do anything (as it is a placeholder)
+for name in name_set:
+        if 'g' in name.lower():
+            continue  #  Skips over 'George'
+        else:
+            print(name)
+
+#Lesson Four:       Error Handling
+    # try and except
+    
+    # finally
