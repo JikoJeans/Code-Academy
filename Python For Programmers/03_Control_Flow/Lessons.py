@@ -116,5 +116,21 @@ for name in name_set:
 
 #Lesson Four:       Error Handling
     # try and except
-    
+        # The clause try attempts to execute a block of code and if for any reason
+        #  the block fails, then except will execute a block a code as follows:
+try:
+    print(sum(name_set))
+except:
+    print('Connot output sum, Invalid input')
+
     # finally
+        # the finally clause executes a block of code regardless of if the try
+        #  block finishes or if it failed and the except block ran. As a resuklt
+        #  regardless of the try and except block, the finally clause always
+        #  executes like below:
+try:
+     print(sum(name_set))
+except:
+    print('Connot output sum, Invalid input')
+finally:
+    print('Calculation complete')  #  is always outputted
