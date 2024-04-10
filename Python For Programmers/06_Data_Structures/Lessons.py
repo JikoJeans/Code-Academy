@@ -46,6 +46,47 @@ print(base_string.split('Is'))  #  ['The Night ', ' Young']
 print(base_string.split('g'))  #  ['The Ni', 'ht Is Youn', '']
 
 #Lesson Two:       Lists
+    # Lists
+        # In Python, lists are ordered collections of items that can contain
+        #  different data types such as strings, integer, float values, etc.
+        #  A List can be declared with brackets '[]' with the entries being
+        #  seperated by commas. Two examples can be found below where a list
+        #  contains only one data type and one where it varies:
+numbered_list = [39, 46, 28, 44]
+random_list = ['The', 66, 'def', 2.1, ['e', 'h', 'd']]
+
+    # List Indexing and Slicing
+        # Items in a list can be accessed similar to strings utilizing the index.
+        # Using brackets again we start the selection at the 0 index and moving up
+        # from there. Slicing works as anticipated (similar to strings) and can be
+        # seen in the demonstration below:
+print(numbered_list[0])  #  39
+print(random_list[1:3])  #  [66, 'def']
+
+    # Common Built-in Methods
+        # len()
+            # The length of a list can be measured using the built-in function len()
+            # by passing in the list. Below shows the call on both lists:
+print(len(numbered_list))  #  4
+print(len(random_list))  #  5
+
+        # .append()
+            # The built-in append() function takes in an argument and appends it to
+            #  the end of the list.
+numbered_list.append(123)  #  appends 123 to the end of the numbered list
+random_list.append('1B')  #  appends '1B' to the end of the random list
+        # .remove()
+            # The built-in method .remove() will remove the item that is passed in
+            #  as the argument. The example below shows a removal on both lists:
+numbered_list.remove(46)  #  removes 46 from the numbered list
+random_list.remove('def')  #  removes 'def' from the random list
+
+        # .pop()
+            # The .pop() takes an index and removes the element given at that
+            # index. If no index is provided then the final element is poped.
+numbered_list.pop()  #  removes 44 from the numbered list
+random_list.pop(0)  #  removes 'The' from the random list
+
 #Lesson Three:     Tuples
 #Lesson Four:      Dictionaries
 #Lesson Five:      Sets
