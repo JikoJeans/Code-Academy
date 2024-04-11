@@ -198,11 +198,72 @@ final_scores.update(test_scores)
 print(len(final_scores))  #  7
 
         # .keys() and .values()
-            # the built-in functions .keys() and .values() can be used to return a
+            # The built-in functions .keys() and .values() can be used to return a
             #  list of either keys or values as seen below:
 print(test_scores.keys())  #  dict_keys(['student1', 'student2', 'student3', 'student4', 'student5'])
 print(test_scores.values())  #  dict_values([[100, 100, 90, 80], [80, 80, 90, 90],
                              # [75, 80, 95, 80], [75, 80, 90, 85], [90, 80, 90, 100]])      
 
 #Lesson Five:      Sets
+    # Sets
+        # Sets are an immutable and unordered collection of unique elements that can consists of integer,
+        #  floats, strings, and tuples. Due to the immutable nature, the set cannot contain elements such
+        #  as lists, sets, or dictionaries as they are mutable. In Python, a set can be created with curly
+        #  brackets or with the built-in function set() which will take in a list argument to create a set.
+        #  Utilizing the set() method will drop any duplicates and we can can see the different declarations
+        #  below:
+first_set = {80, 80, 'nine', 90, 'ten'}
+second_set = set(final_scores['student1'])
+third_set = set(example_tuple)
+print(first_set)  #  {80, 'nine', 90, 'ten'}
+print(second_set)  #  {80, 90, 100}
+print(third_set)  #  {32, 'day', 59, 'night'}
+
+    # Accessing and Writing Values
+        # Sets do not have indexes or keys so we have to use the in keyword to check if a set contains a value
+        #  as seen below:
+print(90 in first_set)  #  True
+print(95 in second_set)  #  False
+
+    # Common Built-in Methods
+        # .add()
+            # Because sets are immutable, existing elements cannot be changed, however a new element can be
+            #  added by using the built-in method add() which takes in the element to add to the set as seen
+            #  in the examples below:
+first_set.add('eleven')
+second_set.add(90)
+third_set.add(64)
+
+        # .update() and .union()
+            # The built-in method .update() takes in any iterable object, such as tuples, lists, dictionaries,
+            #  or sets, and adds the object to an existing set. Similarly, the built-in method .union() takes
+            #  an iterable object and joins the new object with the existing object. Any duplicated elements
+            #  will not be added as seen in the examples below:
+print(third_set)  #  {32, 64, 'day', 'night', 59}
+third_set.update(example3_tuple)
+print(third_set)  #  {32, 64, 999, 872, 123, 'night', 'day', 59}
+fourth_set = {'eleven'}
+print(fourth_set)  #  {'eleven'}
+fourth_set = fourth_set.union(first_set)
+print(fourth_set)  #  {80, 'eleven', 'nine', 90, 'ten'}
+
+        # .remove()
+            # The built-in method .remove() takes in an element and removes it from the set. We can see
+            #  in the examples below how the element removal occurs:
+print(fourth_set)  #  {80, 'eleven', 90, 'ten', 'nine'}
+fourth_set.remove('eleven')
+print(fourth_set)  #  {80, 90, 'ten', 'nine'}
+# fourth_set.remove('eleven')  #  would now produce an error as it no longer exists
+    
+    # for loops
+        # Because sets are iterable, we can utilize a for loop to iterate through the set as seen in the
+        #  example below:
+contents = ""
+for index in first_set:
+    if contents == "":
+        contents = index
+    else:
+        contents = f'{contents}, {index}'
+print(contents)  #  ten, nine, 80, eleven, 90
+
 #Lesson Six:       Queues and Stacks
