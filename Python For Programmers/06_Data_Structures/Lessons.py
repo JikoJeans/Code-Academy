@@ -267,3 +267,102 @@ for index in first_set:
 print(contents)  #  ten, nine, 80, eleven, 90
 
 #Lesson Six:       Queues and Stacks
+    # The final two data structures aren't built into Python, but rather are can be made
+    #  by utilizing classes in python. There is a Node class being used but this is an
+    #  imported class.
+        # Queues
+            # Queues are collections of items that follow FIFO(First In First Out) protocol
+            #  to store and remove data. This can be visualized as customers waiting in line
+            #  and by extension the first customer in line is served first and every subsiquent
+            #  customer must wait their turn before being served.
+        # Implementation
+            # Disclaimer - This code is copied from the code academy and as such I take no credit in its creation.
+from node import Node
+class Queue:
+    def __init__(self):
+        self.head = None
+        self.tail = None
+        self.size = 0
+    def enqueue(self, value):
+        if self.has_space():
+            item_to_add = Node(value)
+            print("Adding " + str(item_to_add.get_value()) + " to the queue!")
+            if self.is_empty():
+                self.head = item_to_add
+                self.tail = item_to_add
+            else:
+                self.tail.set_next_node(item_to_add)
+                self.tail = item_to_add
+            self.size += 1
+        else:
+            print("Sorry, no more room!")  
+    def dequeue(self):
+        if self.get_size() > 0:
+            item_to_remove = self.head
+            print(str(item_to_remove.get_value()) + " is served!")
+            if self.get_size() == 1:
+                self.head = None
+                self.tail = None
+            else:
+                self.head = self.head.get_next_node()
+                self.size -= 1
+            return item_to_remove.get_value()
+        else:
+            print("The queue is totally empty!")
+    def peek(self):
+        if self.size > 0:
+            return self.head.get_value()
+        else:
+            print("No orders waiting!")
+    def get_size(self):
+        return self.size
+    def is_empty(self):
+        return self.size == 0
+        # The following functions are used for this particular example
+            # enqueue(): This method takes in a value and adds it to the queue if there is space or outputs
+            #  'Sorry, no more room!'.
+            # dequeue(): This method removes a value from the queue or prints 'The queue is totally empty!'.
+            # peek(): This method returns the front value in the queue if there is a value. If the queue is
+            #  empty then the method will output 'No orders waiting!'.
+            # get_size(): This method returns the size of the queue.
+            # is_empty(): This final method will return a boolean that is true if the queue is empty.
+        # Stacks
+            # Like queues, stacks are also collections of items added in order but a stack performs
+            #  the LIFO(last-in-first-out) protocol to store and remove data. This can be best visualized
+            #  with the example of plates, the last plate placed in a cabinet is the first plate used
+            #  unless you did between plates.
+        # Implentation
+class Stack:
+    def __init__(self, limit=1000):
+        self.top_item = None
+        self.size = 0
+    def push(self, value):
+        if self.has_space():
+            item = Node(value)
+            item.set_next_node(self.top_item)
+            self.top_item = item
+            self.size += 1
+        else:
+            print("All out of space!")
+    def pop(self):
+        if self.size > 0:
+            item_to_remove = self.top_item
+            self.top_item = item_to_remove.get_next_node()
+            self.size -= 1
+            return item_to_remove.get_value()
+        else:
+            print("This stack is totally empty.")
+    def peek(self):
+        if self.size > 0:
+            return self.top_item.get_value()
+        else:
+            print("Nothing to see here!")
+    def is_empty(self):
+        return self.size == 0
+    # The following functions are used for this particular example
+            # push(): This method takes in a value and adds it to the stack if there is space or outputs
+            #  'All out of space!'.
+            # pop(): This method removes a value from the stack or prints 'All out of space!' if it is empty.
+            # peek(): This method returns the top value in the stack if there is a value. If the stack is
+            #  empty then the method will output 'This stack is totally empty.'.
+            # is_empty(): This final method will return a boolean that is true if the stack is empty.
