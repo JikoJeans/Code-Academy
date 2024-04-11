@@ -77,7 +77,7 @@ class ProtectedClass:
 
 temp_var = PublicClass('Hi', 'There')
 temp_var.display_storage()  #  Would output 'self contains: Hi and There'
-print(f'self contains: {temp_var._storage1} and {temp_var._storage2}')
+# print(f'self contains: {temp_var._storage1} and {temp_var._storage2}')
     # No longer works and would cause an error.
 
     # Private Access Modifiers
@@ -94,7 +94,7 @@ class PrivateClass:
 
 temp_var = PrivateClass('Hi', 'There')
 temp_var.display_storage()  #  Would output 'self contains: Hi and There'
-print(f'self contains: {temp_var.__storage1} and {temp_var.__storage2}')
+# print(f'self contains: {temp_var.__storage1} and {temp_var.__storage2}')
     # Attribute Error message.
 
 #Lesson Four:      Encapsulation

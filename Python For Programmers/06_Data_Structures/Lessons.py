@@ -119,7 +119,7 @@ print(len(example2_tuple))  #  1
             #  the letter "Z" like below:
 example3_tuple = (123, 999, 872)
 example4_tuple = ('first', 'second', 'third')
-print(max(example_tuple))  #  Throws an error
+# print(max(example_tuple))  #  Throws an error
 print(max(example3_tuple))  #  999
 print(max(example4_tuple))  #  third
 
@@ -127,7 +127,7 @@ print(max(example4_tuple))  #  third
             # the built-in min() function is limited similarly to max() but
             #  functions in the reverse manor. The smallest numerical value or
             #  string closes to the letter "A" like below:
-print(min(example_tuple))  #  Throws an error
+# print(min(example_tuple))  #  Throws an error
 print(min(example3_tuple))  #  123
 print(min(example4_tuple))  #  first
 
@@ -143,10 +143,66 @@ print(example4_tuple.index('third'))  #  3
             #  but returns the number of occurances found in the tuple. A few
             #  examples can be found below:
 example5_tuple = ('abc', 'abc', 2, 3, 4)
-print(example3_tuple.index(9))  #  0
+# print(example3_tuple.index(9))  #  Throws an error
 print(example4_tuple.index('third'))  #  1
 print(example5_tuple.index('abc'))  #  2
 
 #Lesson Four:      Dictionaries
+    # Dictionaries
+        # Dictionaries are one of the most frequently used built-in data structures
+        #  in Python. Dictionaries are defined with curly brackets '{}'. They operate
+        #  functionally the same as a hash table and as such each dictionary holds
+        #  a key-value pair that is used to access the contents. An example of a
+        #  dictionary declaration is provided below where the dictionary has 4
+        #  key-pairs with strings used as the key and lists being the value stored:
+test_scores = { 'student1' : [75, 80, 90, 80],
+                'student2' : [80, 80, 90, 90],
+                'student3' : [75, 80, 95, 80],
+                'student4' : [75, 80, 90, 85]}
+
+    # Accessing And Writing Values
+        # In contrast to other data structures, there is no built-in ways to use
+        #  an index to access values (for the same reasons as to why it a hash map
+        #  can not be indexed). As a result if we want to access, update, or add
+        #  new values to the dictionay we do so by using the keys as seen in the
+        #  examples below:
+test_scores['student1'] = [100, 100, 90, 80]
+test_scores['student5'] = [90, 80, 90, 100]
+print(test_scores['student1'])  #  [100, 100, 90, 80]
+print(test_scores['student2'])  #  [80, 80, 90, 90]
+print(test_scores['student5'])  #  [90, 80, 90, 100]
+
+    # Common Built-in Functions
+        # len()
+            # The length of the dictionary can be found utilizing the built-in
+            #  function len(). By passing the dictionary as the parameter we
+            #  are returned the count of the number of key-value pairs as seen
+            #  below:
+print(len(test_scores))  #  5
+
+        # .update()
+            # The built-in method update() takes in a dictionary as an argument
+            #  and updates the existing entries of the first dictionary. Any new
+            #  key-value pairs will be added to the existing dictionary, but any
+            #  overlapping key-pairs form the new dictionary will be used to
+            #  overwrite the original dictionary. If the original dictionary
+            #  contains unique keys that are not referenced in the new dictionary
+            #  then the old values will remain as seen below:
+final_scores = {'student1' : [75, 80, 90, 80],
+                'student5' : [80, 80, 90, 90],
+                'student6' : [50, 80, 90, 50],
+                'student9' : [75, 80, 95, 90]}
+print(len(final_scores))  #  4
+print(len(test_scores))  #  5
+final_scores.update(test_scores)
+print(len(final_scores))  #  7
+
+        # .keys() and .values()
+            # the built-in functions .keys() and .values() can be used to return a
+            #  list of either keys or values as seen below:
+print(test_scores.keys())  #  dict_keys(['student1', 'student2', 'student3', 'student4', 'student5'])
+print(test_scores.values())  #  dict_values([[100, 100, 90, 80], [80, 80, 90, 90],
+                             # [75, 80, 95, 80], [75, 80, 90, 85], [90, 80, 90, 100]])      
+
 #Lesson Five:      Sets
 #Lesson Six:       Queues and Stacks
